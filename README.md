@@ -1,4 +1,4 @@
-# Egg Monitor Master
+# Egg Monitor Master MVP
 
 ## Overview
 Egg Monitor Master is a web-based application designed for monitoring and managing egg incubators. It provides users with the ability to register accounts, log in securely, and monitor the temperature and humidity levels inside their incubators in real-time. The application also offers features such as email verification, role-based access control, and customizable settings to enhance user experience and security.
