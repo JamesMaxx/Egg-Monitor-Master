@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+  <h1>Incubator Dashboard</h1>
+
+  {% if error %}
+  <div style="color: red;">
+    {{ error }}
+  </div>
+  {% endif %}
+
+  <div class="row">
+    <div class="col s6">
+      <h2>Temperature</h2>
+      <div id="temp-chart" style="height: 300px"></div>
+      <script>
+        var temp_data = [
+          {% for row in current %}
+          {x: '{{ row.timestamp.strftime("%H:%M:%S") }}', y: {{ row.temperature }} },
+          {% endfor %}
+        ];
+        var temp_trace = {
+          x: temp_data.map(function(d) { return d.x; }),
+          y: temp_data.map(function(d) { return d.y; }),
+          type: 'scatter'
+        };
+        var temp_data_full = [
+          {% for row in history %}
+          {x: '{{ row.timestamp.strftime("%H:%M:%S") }}', y: {{ row.temperature }} },
+          {% endfor %}
+        ];
+        var temp_layout = {
+          title: 'Temperature',
+          xaxis: {
+            title: 'Time',
+            showgrid: false,
+            zeroline: false
+          },
+          yaxis: {
+            title: 'Temperature (°C)',
+            range: [35, 38]
+          }
+        };
+        Plotly.newPlot('temp-chart', [temp_trace], temp_layout, {displayModeBar: false});
+      </script>
+    </div>
+
+    <div class="col s6">
+      <h2>Humidity</h2>
+      <div id="hum-chart" style="height: 300px"></div>
+      <script>
+        var hum_data = [
+          {% for row in current %}
+          {x: '{{ row.timestamp.strftime("%H:%M:%S") }}', y: {{ row.humidity }} },
+          {% endfor %}
+        ];
+        var hum_trace = {
+          x: hum_data.map(function(d) { return d.x; }),
+          y: hum_data.map(function(d) { return d.y; }),
+          type: 'scatter'
+        };
+        var hum_data_full = [
+          {% for row in history %}
+          {x: '{{ row.timestamp.strftime("%H:%M:%S") }}', y: {{ row.humidity }} },
+          {% endfor %}
+        ];
+        var hum_layout = {
+          title: 'Humidity',
+          xaxis: {
+            title: 'Time',
+            showgrid: false,
+            zeroline: false
+          },
+          yaxis: {
+            title: 'Humidity (%)',
+            range: [45, 60]
+          }
+        };
+        Plotly.newPlot('hum-chart', [hum_trace], hum_layout, {displayModeBar: false});
+      </script>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>Time Range</h2>
+      <form class="col s6" action="/dashboard" method="post">
+        <div class="row">
+          <div class="input-field col s6">
+            <select name="filter">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="today">Today</option>
+              <option value="week">This Week</option>
+              <option value="month">This Month</option>
+            </select>
+            <label>Filter</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Apply
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
