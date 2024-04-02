@@ -9,7 +9,7 @@ Egg Monitor Master is a web-based application designed for monitoring and managi
 1. **User Registration and Login:**
 
    - Users can sign up for new accounts by providing a username, password, and email address.
-   - Email verification is implemented to ensure the security of user accounts. 
+   - Email verification is implemented to ensure the security of user accounts.
    - Registered users can log in securely using their username and password.
 
 2. **Real-time Monitoring:**
@@ -34,7 +34,7 @@ Egg Monitor Master is a web-based application designed for monitoring and managi
 6. **Responsive Design:**
 
    - The application incorporates responsive design principles to ensure optimal user experience across various screen sizes and devices.
-   
+
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
