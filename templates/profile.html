@@ -9,8 +9,9 @@
 <body>
     <div class="container">
         <div class="profile-content">
-            <h1>Welcome, {{ username }}!</h1>
-            <p>This is your profile page.</p>
+            <h1>Welcome, {{ username | capitalize }}!</h1>
+
+            <p>Navigate to the dropdown menu to view the incubator dashboard in real-time using different graphs.</p>
         </div>
         <!-- Embedding Dash app -->
         <iframe src="/dash" style="width: 100%; height: 600px; border: none;"></iframe>

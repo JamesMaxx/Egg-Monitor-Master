@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50000,
+            "driver": "SQLite",
+            "name": "EMM user database",
+            "database": "${workspaceFolder:Egg-Monitor-Master}/users.db"
+        }
+    ]
+}
