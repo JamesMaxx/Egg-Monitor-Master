@@ -363,6 +363,20 @@ def profile():
         return redirect(url_for('login_form'))
 
 
+@app.route('/logout', methods=['POST'])
+def logout():
+    """
+    Logs out the current user by removing the username from the session.
+
+    This function is a route handler for the '/logout' endpoint, which is accessed via the POST method.
+    It removes the 'username' from the session and redirects the user to the landing page.
+
+    Returns:
+        Redirect: Redirects the user to the landing page.
+    """
+    session.pop('username', None)
+    return redirect(url_for('landing'))
+
 """ Dash app initialization """
 dash_app = dash.Dash(__name__, server=app, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
