@@ -363,3 +363,11 @@ INFO:werkzeug: * Detected change in 'd:\\edabit_challenges\\EMM_working_prototyp
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 896-121-558
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+ERROR:ddtrace.internal.writer.writer:failed to send, dropping 7 traces to intake at unix:///opt/datadog/apm/inject/run/apm.socket/v0.5/traces after 3 retries
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 752-886-736
+ERROR:ddtrace.internal.writer.writer:failed to send, dropping 7 traces to intake at unix:///opt/datadog/apm/inject/run/apm.socket/v0.5/traces after 3 retries
+WARNING:ddtrace.vendor.dogstatsd:Error submitting packet: [Errno 111] Connection refused, dropping the packet and closing the socket
+WARNING:ddtrace.vendor.dogstatsd:Error submitting packet: [Errno 111] Connection refused, dropping the packet and closing the socket
