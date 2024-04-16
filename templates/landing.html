@@ -87,6 +87,83 @@
             font-weight: 500;
         }
 
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .user-stories {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .user-story {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        .user-story:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-story img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-story h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .user-story p {
+            font-size: 16px;
+            color: #666;
+        }
+
         .cta {
             text-align: center;
             margin-bottom: 40px;
@@ -154,18 +231,36 @@
         <!-- Features -->
         <div class="features">
             <div class="feature">
-                <h2>Feature 1</h2>
-                <p>[Description of Feature 1]</p>
+                <h2>Real-time Data Monitoring</h2>
+                <p>Monitor temperature and humidity levels of your egg incubator in real-time, ensuring optimal conditions for successful hatching.</p>
             </div>
             <div class="feature">
-                <h2>Feature 2</h2>
-                <p>[Description of Feature 2]</p>
+                <h2>Data Visualization</h2>
+                <p>Visualize historical data trends with interactive graphs and charts, allowing you to track incubation progress and identify patterns.</p>
             </div>
             <div class="feature">
-                <h2>Feature 3</h2>
-                <p>[Description of Feature 3]</p>
+                <h2>Notifications</h2>
+                <p>Receive instant notifications via email or SMS in case of any deviations from optimal incubation conditions, ensuring timely intervention.</p>
             </div>
-            <!-- Add more features as needed -->
+        </div>
+
+        <!-- User Stories -->
+        <div class="user-stories">
+            <div class="user-story">
+                <img src="{{ url_for('static', filename='userstory1.jpg') }}" alt="User 1">
+                <h2>Jack Brown</h2>
+                <p>As a poultry farmer, I need to monitor the incubation environment to ensure the health and safety of my eggs, even when I'm not physically present.</p>
+            </div>
+            <div class="user-story">
+                <img src="{{ url_for('static', filename='userstory2.jpg') }}" alt="User 2">
+                <h2>Carol Akinyi</h2>
+                <p>As a duck farmer, I require a reliable system to track and visualize data trends to optimize the incubation process and maximize hatch rates.</p>
+            </div>
+            <div class="user-story">
+                <img src="{{ url_for('static', filename='userstory3.jpg') }}" alt="User 3">
+                <h2>Fatma Ahmed</h2>
+                <p>As a poultry enthusiast, I'm excited to have access to a user-friendly platform that allows me to monitor egg incubation data and share insights with fellow hobbyists.</p>
+            </div>
         </div>
 
         <!-- Call-to-Action -->
