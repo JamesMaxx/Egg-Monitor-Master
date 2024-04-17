@@ -17,3 +17,9 @@ six==1.16.0
 SQLAlchemy==1.4.46
 Werkzeug==2.2.2
 boto3==1.34.85
+secrets
+hashlib
+sqlite3
+threading
+gunicorn
+

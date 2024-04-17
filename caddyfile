@@ -1,0 +1,6 @@
+http://18.206.202.5 {
+    reverse_proxy localhost:5000
+    log {
+        output file /var/log/caddy.log
+    }
+}
