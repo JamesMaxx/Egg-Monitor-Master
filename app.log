@@ -1421,3 +1421,54 @@ INFO:werkzeug: * Detected change in 'd:\\Egg-Monitor-Master\\main.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 104-834-719
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-232-711
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:17] "GET /static/chicken1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:17] "GET /static/chicken2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:18] "GET /static/userstory2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:18] "GET /static/userstory1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:18] "GET /static/chicken3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:18] "GET /static/userstory3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:25] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:25] "GET /static/images/frontImg.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:25] "GET /static/randomtip.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:25] "GET /static/images/backImg.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:26] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:08:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-232-711
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:00] "[36mGET /static/chicken2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:01] "[36mGET /static/chicken1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:01] "[36mGET /static/userstory3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:01] "[36mGET /static/userstory2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:01] "[36mGET /static/userstory1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:01] "[36mGET /static/chicken3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:01] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "[36mGET /static/chicken2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "[36mGET /static/chicken1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "[36mGET /static/userstory3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "[36mGET /static/userstory2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "[36mGET /static/userstory1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "[36mGET /static/chicken3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 18:20:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\ALX\\Egg-Monitor-Master-main\\Egg-Monitor-Master\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-232-711
+INFO:werkzeug: * Detected change in 'D:\\ALX\\Egg-Monitor-Master-main\\Egg-Monitor-Master\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-232-711
