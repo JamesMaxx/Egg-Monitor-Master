@@ -24,8 +24,8 @@ def install_web_server_and_certificate(email, domain):
         ServerName {domain}
         ServerAlias www.{domain}
         DocumentRoot /var/www/{domain}
-        ErrorLog ${{{APACHE_LOG_DIR}}}/error.log
-        CustomLog ${{{APACHE_LOG_DIR}}}/access.log combined
+        ErrorLog ${{APACHE_LOG_DIR}}/error.log
+        CustomLog ${{APACHE_LOG_DIR}}/access.log combined
         SSLEngine on
         SSLCertificateFile /etc/letsencrypt/live/{domain}/fullchain.pem
         SSLCertificateKeyFile /etc/letsencrypt/live/{domain}/privkey.pem
@@ -40,4 +40,4 @@ def install_web_server_and_certificate(email, domain):
     subprocess.run(["sudo", "systemctl", "restart", "apache2"])
 
 # Usage
-install_web_server_and_certificate("your-email@example.com", "your-domain.com")
+install_web_server_and_certificate("your-email@example.com", "jamesmax.tech")
