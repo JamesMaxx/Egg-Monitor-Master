@@ -5,12 +5,6 @@
             "driver": "SQLite",
             "name": "EMM user database",
             "database": "${workspaceFolder:Egg-Monitor-Master}/users.db"
-        },
-        {
-            "previewLimit": 50000000000,
-            "driver": "SQLite",
-            "name": "EMM",
-            "database": "${workspaceFolder:Egg-Monitor-Master}/users.db"
         }
     ]
 }
