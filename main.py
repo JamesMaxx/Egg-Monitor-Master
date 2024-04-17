@@ -388,8 +388,7 @@ dash_app.layout = dbc.Container([
             options=[
                 {'label': 'Bar Graph', 'value': 'bar'},
                 {'label': 'Line Graph', 'value': 'line'},
-                {'label': 'Table Graph', 'value': 'table'},
-                {'label': 'Pie Chart', 'value': 'pie'}
+                {'label': 'Table Graph', 'value': 'table'}
             ],
             value='bar'
         ),
@@ -406,7 +405,7 @@ def update_graph(graph_type):
     Callback function for updating the graph based on the selected graph type.
 
     Args:
-        graph_type (str): The type of graph to display. Possible values are 'bar', 'line', 'table', and 'pie'.
+        graph_type (str): The type of graph to display. Possible values are 'bar', 'line', and 'table'.
 
     Returns:
         dict: A dictionary containing the data and layout for the graph.
@@ -425,25 +424,20 @@ def update_graph(graph_type):
     """
     if graph_type == 'bar':
         data = [
-            {'x': df['timestamp'], 'y': df['temperature'], 'name': 'Temperature', 'type': 'bar'},
+            {'x': df['timestamp'], 'y': df['temperature'], 'name': 'Temperature (°C)', 'type': 'bar'},
             {'x': df['timestamp'], 'y': df['humidity'], 'name': 'Humidity', 'type': 'bar'}
         ]
     elif graph_type == 'line':
         data = [
-            {'x': df['timestamp'], 'y': df['temperature'], 'name': 'Temperature', 'type': 'line'},
+            {'x': df['timestamp'], 'y': df['temperature'], 'name': 'Temperature (°C)', 'type': 'line'},
             {'x': df['timestamp'], 'y': df['humidity'], 'name': 'Humidity', 'type': 'line'}
         ]
     elif graph_type == 'table':
         data = [
             go.Table(
-                header=dict(values=['Timestamp', 'Temperature', 'Humidity']),
+                header=dict(values=['Timestamp', 'Temperature (°C)', 'Humidity']),
                 cells=dict(values=[df['timestamp'], df['temperature'], df['humidity']])
             )
-        ]
-    elif graph_type == 'pie':
-        data = [
-            go.Pie(labels=df['timestamp'], values=df['temperature'], name='Temperature'),
-            go.Pie(labels=df['timestamp'], values=df['humidity'], name='Humidity')
         ]
     else:
         data = []
@@ -455,6 +449,8 @@ def update_graph(graph_type):
     }
 
     return {'data': data, 'layout': layout}
+
+
 
 """ Data generator thread """
 data_thread = DataGeneratorThread()
