@@ -1167,3 +1167,28 @@ INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:10] "GET /static/style.css HTTP/1
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:10] "[36mGET /static/randomtip.js HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:10] "[36mGET /static/images/frontImg.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:10] "[36mGET /static/images/backImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:25] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:25] "[36mGET /static/randomtip.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:25] "[36mGET /static/images/backImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 02:26:25] "[36mGET /static/images/frontImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 896-121-558
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "[36mGET /static/chicken3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "[36mGET /static/userstory2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "[36mGET /static/chicken2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "[36mGET /static/chicken1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "[36mGET /static/userstory1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "[36mGET /static/userstory3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 08:43:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 09:02:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 09:02:00] "[36mGET /static/images/frontImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 09:02:00] "[36mGET /static/images/backImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 09:02:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 09:02:00] "[36mGET /static/randomtip.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 09:02:01] "GET /favicon.ico HTTP/1.1" 200 -
