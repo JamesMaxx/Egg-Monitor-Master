@@ -1,6 +1,6 @@
 # E.M.M. (Egg Monitor Master) System MVP Overview
 
-##Introduction:
+## Introduction:
 Welcome to the E.M.M. System MVP README, where we introduce an innovative solution designed to revolutionize egg incubation management. In the realm of poultry farming and enthusiasts, ensuring optimal conditions for egg incubation is paramount for successful hatching and healthy chicks. The E.M.M. System MVP addresses the challenges faced by poultry farmers and enthusiasts by providing a comprehensive platform for monitoring and managing egg incubators with precision and ease.
 
 ## Architecture Overview:
@@ -95,10 +95,10 @@ Thank You!
 
 #### Contributors:
 
-#####Mwanthi Waita
+##### Mwanthi Waita
 Occupation: ALX Student cohort 17 and Full-stack Software Developer
 Github Profile: ElvisMw
-#####JamesMax Munene
+##### JamesMax Munene
 Occupation: ALX Student cohort 17 and Full-stack Software Developer
 Github Profile: JamesMaxx
 
