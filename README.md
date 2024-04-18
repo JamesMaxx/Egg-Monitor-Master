@@ -1,6 +1,6 @@
 ![Dashboard reading of line graph](/static/Readme_image.JPG)
 
-# E.M.M. (Egg Monitor Master) System MVP Overview
+# E.M.M. (Egg Monitor Master) System
 
 ## Table of Contents
 
