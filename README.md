@@ -146,11 +146,11 @@ The E.M.M. System MVP offers a comprehensive solution for efficient egg incubati
 
 ## Contributors:
 
-Mwanthi Waita
+Mwanthi Waita <br>
 Occupation: ALX Student cohort 17 and Full-stack Software Developer
 [GitHub Profile: ElvisMw](https://github.com/ElvisMw)
 
-JamesMax Munene
+JamesMax Munene <br>
 Occupation: ALX Student cohort 17 and Full-stack Software Developer
 [GitHub Profile: JamesMaxx](https://github.com/JamesMaxx)
 <br>
