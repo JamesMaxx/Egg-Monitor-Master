@@ -1,5 +1,98 @@
 # E.M.M. (Egg Monitor Master) System MVP Overview
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Architecture Overview](#architecture-overview)
+  - [Client-Side (Frontend)](#client-side-frontend)
+  - [Server-Side (Backend)](#server-side-backend)
+  - [Database](#database)
+  - [API](#api)
+  - [Data Visualization](#data-visualization)
+  - [User Authentication](#user-authentication)
+  - [Backend Console](#backend-console)
+- [Data Visualization](#data-visualization-1)
+- [User Authentication](#user-authentication-1)
+- [Backend Console](#backend-console-1)
+- [Technical Implementation](#technical-implementation)
+  - [Hashing Passwords](#hashing-passwords)
+  - [Database Management](#database-management)
+  - [User Registration and Authentication](#user-registration-and-authentication)
+  - [Data Visualization](#data-visualization-2)
+  - [Background Data Generation](#background-data-generation)
+  - [Session Management](#session-management)
+  - [Error Handling](#error-handling)
+- [Additional Technical Details](#additional-technical-details)
+  - [Data Generation Module](#data-generation-module)
+- [User Stories](#user-stories)
+  - [John (Poultry Farmer)](#john-poultry-farmer)
+  - [Diana (Duck Farmer)](#diana-duck-farmer)
+  - [Eva (Poultry Enthusiast)](#eva-poultry-enthusiast)
+- [Challenges](#challenges)
+  - [Scalability](#scalability)
+  - [Real-Time Data Updates](#real-time-data-updates)
+  - [Security](#security)
+  - [User Experience](#user-experience)
+- [Open to Further Research and Updates](#open-to-further-research-and-updates)
+- [Github Repository](#github-repository)
+- [Conclusion](#conclusion)
+- [Contributors](#contributors)
+
+## Introduction
+
+Welcome to the E.M.M. System MVP README, where we introduce an innovative solution designed to revolutionize egg incubation management. In the realm of poultry farming and enthusiasts, ensuring optimal conditions for egg incubation is paramount for successful hatching and healthy chicks. The E.M.M. System MVP addresses the challenges faced by poultry farmers and enthusiasts by providing a comprehensive platform for monitoring and managing egg incubators with precision and ease.
+
+## Architecture Overview
+
+### Client-Side (Frontend)
+
+- Developed using HTML, CSS, and JavaScript.
+- Utilizes React components for dynamic and interactive elements.
+- User authentication module ensures secure logins and sign-ups.
+
+### Server-Side (Backend)
+
+- Powered by Flask framework.
+- API routes for communication.
+- Database access layer using SQLAlchemy.
+- Backend console implemented in Python for server-side operations.
+
+### Database
+
+- SQL database (SQLite) stores user data and incubator readings.
+- Tables include 'users' and 'incubator_readings'.
+- API (Application Programming Interface): Provides endpoints for user-related operations and dashboard data retrieval.
+- Handles communication between the frontend and backend components.
+
+## Data Visualization
+
+Utilizes Dash framework for interactive data visualization.
+Plotly library used to generate graphs and tables dynamically.
+
+## User Authentication
+
+JWT (JSON Web Tokens) generated during login for subsequent API requests.
+Ensures secure access to user-specific data and functionalities.
+
+## Backend Console
+
+Python script executes background tasks and server-side operations.
+Facilitates data simulation for testing purposes.
+
+## Technical Implementation
+
+### Hashing Passwords
+
+Utilizes SHA256 algorithm for password hashing with unique salt for enhanced security.
+
+### Database Management
+
+SQLite database employed for data storage.
+
+
+
+# E.M.M. (Egg Monitor Master) System MVP Overview
+
 ## Introduction:
 Welcome to the E.M.M. System MVP README, where we introduce an innovative solution designed to revolutionize egg incubation management. In the realm of poultry farming and enthusiasts, ensuring optimal conditions for egg incubation is paramount for successful hatching and healthy chicks. The E.M.M. System MVP addresses the challenges faced by poultry farmers and enthusiasts by providing a comprehensive platform for monitoring and managing egg incubators with precision and ease.
 
@@ -95,10 +188,10 @@ Thank You!
 
 #### Contributors:
 
-##### Mwanthi Waita
+Mwanthi Waita
 Occupation: ALX Student cohort 17 and Full-stack Software Developer
-Github Profile: ElvisMw
-##### JamesMax Munene
+##### Github Profile: ElvisMw
+JamesMax Munene
 Occupation: ALX Student cohort 17 and Full-stack Software Developer
-Github Profile: JamesMaxx
+##### Github Profile: JamesMaxx
 
