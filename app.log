@@ -1791,3 +1791,58 @@ INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 14:14:49] "[36mGET /static/chicken3.jp
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 14:14:49] "[36mGET /static/userstory1.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 14:14:49] "[36mGET /static/userstory2.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 14:14:49] "[36mGET /static/userstory3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.103:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 896-121-558
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:29] "[36mGET /static/Images/frontImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:29] "[36mGET /static/randomtip.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:29] "[36mGET /static/Images/backImg.jpg HTTP/1.1[0m" 304 -
+INFO:root:Login successful.
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:33] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:33] "GET /dash HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:34] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:34] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:34] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:34] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:34] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:34] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:48] "[32mPOST /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:49] "[36mGET /static/chicken1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:49] "[36mGET /static/userstory1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:49] "[36mGET /static/userstory2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:49] "[36mGET /static/chicken2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:49] "[36mGET /static/userstory3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:49] "[36mGET /static/chicken3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:51] "[36mGET /static/randomtip.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:51] "[36mGET /static/Images/frontImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:02:51] "[36mGET /static/Images/backImg.jpg HTTP/1.1[0m" 304 -
+INFO:root:Registration successful.
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:05] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:06] "[36mGET /static/Images/frontImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:06] "[36mGET /static/Images/backImg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:06] "[36mGET /static/randomtip.js HTTP/1.1[0m" 304 -
+INFO:root:Login successful.
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:10] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "GET /dash HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 20:03:11] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
